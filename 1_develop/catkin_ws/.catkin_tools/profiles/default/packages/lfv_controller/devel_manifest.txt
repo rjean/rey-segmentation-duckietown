@@ -1,0 +1,5 @@
+lfv_core/packages/lfv_controller
+/duckietown/catkin_ws/devel/.private/lfv_controller/cmake.lock /duckietown/catkin_ws/devel/./cmake.lock
+/duckietown/catkin_ws/devel/.private/lfv_controller/lib/pkgconfig/lfv_controller.pc /duckietown/catkin_ws/devel/lib/pkgconfig/lfv_controller.pc
+/duckietown/catkin_ws/devel/.private/lfv_controller/share/lfv_controller/cmake/lfv_controllerConfig.cmake /duckietown/catkin_ws/devel/share/lfv_controller/cmake/lfv_controllerConfig.cmake
+/duckietown/catkin_ws/devel/.private/lfv_controller/share/lfv_controller/cmake/lfv_controllerConfig-version.cmake /duckietown/catkin_ws/devel/share/lfv_controller/cmake/lfv_controllerConfig-version.cmake

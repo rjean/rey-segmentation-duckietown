@@ -1,0 +1,3 @@
+Symlinking /duckietown/catkin_ws/devel/lib/pkgconfig/rey_pure_pursuit.pc
+Symlinking /duckietown/catkin_ws/devel/share/rey_pure_pursuit/cmake/rey_pure_pursuitConfig.cmake
+Symlinking /duckietown/catkin_ws/devel/share/rey_pure_pursuit/cmake/rey_pure_pursuitConfig-version.cmake

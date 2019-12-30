@@ -1,0 +1,8 @@
+prefix=/duckietown/catkin_ws/install
+
+Name: rey_pure_pursuit
+Description: Description of rey_pure_pursuit
+Version: 1.0.0
+Cflags: 
+Libs: -L/duckietown/catkin_ws/install/lib 
+Requires: 

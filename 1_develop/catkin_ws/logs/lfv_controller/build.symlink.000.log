@@ -1,0 +1,3 @@
+Symlinking /duckietown/catkin_ws/devel/lib/pkgconfig/lfv_controller.pc
+Symlinking /duckietown/catkin_ws/devel/share/lfv_controller/cmake/lfv_controllerConfig.cmake
+Symlinking /duckietown/catkin_ws/devel/share/lfv_controller/cmake/lfv_controllerConfig-version.cmake

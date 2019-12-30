@@ -1,0 +1,8 @@
+prefix=/duckietown/catkin_ws/devel/.private/rey_controller
+
+Name: rey_controller
+Description: Description of rey_controller
+Version: 1.0.0
+Cflags: 
+Libs: -L/duckietown/catkin_ws/devel/.private/rey_controller/lib 
+Requires: 

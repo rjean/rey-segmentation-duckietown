@@ -1,0 +1,1 @@
+/duckietown/catkin_ws/devel/.private/rey_pure_pursuit/lib/pkgconfig/rey_pure_pursuit.pc

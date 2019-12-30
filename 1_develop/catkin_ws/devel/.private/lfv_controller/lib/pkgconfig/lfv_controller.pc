@@ -1,0 +1,8 @@
+prefix=/duckietown/catkin_ws/devel/.private/lfv_controller
+
+Name: lfv_controller
+Description: Description of lfv_controller
+Version: 1.0.0
+Cflags: 
+Libs: -L/duckietown/catkin_ws/devel/.private/lfv_controller/lib 
+Requires: 

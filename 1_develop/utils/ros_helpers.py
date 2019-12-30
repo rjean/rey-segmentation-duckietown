@@ -10,7 +10,8 @@ def launch_env(simclass=None):
 
     env = simclass(
         seed=4, # random seed
-        map_name="loop_empty",
+        # map_name="loop_empty",
+        map_name = 'loop_obstacles',
         max_steps=500001, # we don't want the gym to reset itself
         domain_rand=0,
         camera_width=640,

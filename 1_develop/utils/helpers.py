@@ -62,14 +62,15 @@ def jpg2rgb(image_data: bytes) -> np.ndarray:
     assert data.dtype == np.uint8
     return data
 
-def launch_env(simclass=None, map_name = "loop_empty"):
+def launch_env(simclass=None, map_name = "loop_obstacles"):
     from simulation.gym_duckietown.simulator import Simulator
 
     simclass = Simulator if simclass is None else simclass
     
     env = simclass(
         seed=123, # random seed
-        map_name=map_name,#"loop_empty",
+        # map_name=map_name,#"loop_empty",
+        map_name = 'loop_obstacles', #"loop_empty",
         max_steps=500001, # we don't want the gym to reset itself
         domain_rand=0,
         camera_width=640,

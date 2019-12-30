@@ -9,9 +9,10 @@
 
     <arg name="lane_following" default="true"/>
     <arg name="/lane_following/line_detection" default="true"/>
-    <arg name="/lane_following/lane_filter" default="true"/>
-    <arg name="/lane_following/ground_projection" default="true"/>
-    <arg name="/lane_following/lane_controller" default="true"/>
+    <arg name="/lane_following/lane_filter" default="false"/>
+    <arg name="/lane_following/ground_projection" default="false"/>
+    <arg name="/lane_following/lane_controller" default="false"/>
+    <arg name="/lfv_controller/lfv_controller" default="true"/>
     <arg name="visualization" default="true"/>
     
     <!-- Start Lane Control -->
@@ -57,6 +58,18 @@
             <include file="$(find lane_control)/launch/lane_controller_node.launch">
                 <arg name="veh" value="$(arg veh)"/>
                 <!-- <arg name="param_file_name" value="$(arg param_file_name)"/> -->
+            </include>
+        </group>
+
+        <!-- LFV lane controller -->
+        <group if="$(arg /lfv_controller/lfv_controller)">
+            <remap from="lfv_controller/lane_pose" to="lane_filter_node/lane_pose"/>
+            <remap from="lfv_controller/wheels_cmd_executed" to="wheels_driver_node/wheels_cmd_executed" />
+            <remap from="lfv_controller/actuator_limits" to="inverse_kinematics_node/actuator_limits" />
+            <remap from="lfv_controller/seglist_filtered" to="lane_filter_node/seglist_filtered" />
+            <remap from="lfv_controller/car_cmd" to="lane_controller_node/car_cmd" />
+            <include file="$(find lfv_controller)/launch/lfv_controller.launch">
+                <arg name="veh" value="$(arg veh)"/>
             </include>
         </group>
 
