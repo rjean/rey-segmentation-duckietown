@@ -12,7 +12,7 @@ class ROSAgent(object):
         logger.info('ROSAgent::__init__ starts')
         # Get the vehicle name, which comes in as HOSTNAME
         self.vehicle = os.getenv('HOSTNAME')
-
+        
         logger.info('Creating subscriber')
         # Subscribes to the output of the lane_controller_node
         self.ik_action_sub = rospy.Subscriber('/{}/wheels_driver_node/wheels_cmd'.format(

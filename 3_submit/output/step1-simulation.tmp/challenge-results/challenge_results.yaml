@@ -1,0 +1,25 @@
+status: failed
+msg: "InvalidSubmission:\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.7/site-packages/zuper_nodes_wrapper/wrapper_outside.py\"\
+  , line 177, in read_one\n    nickname=self.nickname)\n  File \"/usr/local/lib/python3.7/site-packages/zuper_nodes_wrapper/wrapper_outside.py\"\
+  , line 258, in read_reply\n    others = read_until_over(fpout, timeout=timeout,\
+  \ nickname=nickname)\n  File \"/usr/local/lib/python3.7/site-packages/zuper_nodes_wrapper/wrapper_outside.py\"\
+  , line 296, in read_until_over\n    raise TimeoutError(msg) from None\nTimeoutError:\
+  \ Timeout while reading output of node \"agent\".\n\nThe above exception was the\
+  \ direct cause of the following exception:\n\nTraceback (most recent call last):\n\
+  \  File \"experiment_manager.py\", line 301, in run_episode\n    r: MsgReceived\
+  \ = agent.write_topic_and_expect('get_commands', expect='commands')\n  File \"/usr/local/lib/python3.7/site-packages/zuper_nodes_wrapper/wrapper_outside.py\"\
+  , line 96, in write_topic_and_expect\n    ob: MsgReceived = self.read_one(expect_topic=expect,\
+  \ timeout=timeout)\n  File \"/usr/local/lib/python3.7/site-packages/zuper_nodes_wrapper/wrapper_outside.py\"\
+  , line 239, in read_one\n    raise TimeoutError(msg) from e\nTimeoutError: Timeout\
+  \ detected on /fifos/agent-out after 58 messages. Expected topic \"commands\".\n\
+  \nThe above exception was the direct cause of the following exception:\n\nTraceback\
+  \ (most recent call last):\n  File \"/usr/local/lib/python3.7/site-packages/duckietown_challenges/cie_concrete.py\"\
+  , line 676, in scoring_context\n    yield cie\n  File \"experiment_manager.py\"\
+  , line 446, in <module>\n    wrap(cie)\n  File \"experiment_manager.py\", line 434,\
+  \ in wrap\n    main(cie, logdir, attempts)\n  File \"experiment_manager.py\", line\
+  \ 138, in main\n    physics_dt=config.physics_dt)\n  File \"experiment_manager.py\"\
+  , line 305, in run_episode\n    raise dc.InvalidSubmission(msg) from e\nduckietown_challenges.exceptions.InvalidSubmission:\
+  \ Trouble with communication to the agent.\n"
+scores: {}
+stats: {}
+ipfs_hashes: {}
